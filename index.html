@@ -13,10 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>">
-  <meta property="og:image" content="og.jpg">
+  <meta property="og:image" content="https://seezuofficial.github.io/Sezuule/photos/seezu.jpg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="upgrade.css">
   <script defer src="script.js"></script>
+  <script defer src="content.js"></script>
   <script defer src="upgrade.js"></script>
 </head>
 <body>
@@ -25,13 +26,14 @@
     <a class="brand" href="#home" aria-label="SEEZU home">SEEZU<span>®</span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#interests">Interests</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#notes">Notes</a>
+      <a href="#about">About</a><a href="#interests">Interests</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="art.html">Art</a><a href="gallery.html">Gallery</a><a href="travel.html">Travel</a><a href="links.html">Links</a><a href="friends.html">Friends</a><a href="#notes">Notes</a><a href="now.html">Now</a>
       <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero section-wrap" id="home">
+      <div class="social-bar hero-social" data-social></div>
       <div class="hero-topline"><span class="eyebrow"><b class="live-dot"></b> INDEPENDENT MIND · PERSONAL BRAND</span><span class="mono">EST. MMXXVI / INDIA</span></div>
       <div class="hero-copy">
         <p class="hero-kicker reveal">MAUSAM SINGH <span>— ALSO KNOWN AS SEEZU</span></p>
@@ -61,13 +63,22 @@
     <section class="about section-wrap section-pad" id="about">
       <div class="section-heading"><span class="eyebrow">01 — THE PERSON</span><span class="section-rule"></span></div>
       <div class="about-grid">
-        <div><p class="display-small reveal">A LITTLE<br>ABOUT <em>ME.</em></p><div class="about-stamp">MS<br><span>SEEZU</span></div></div>
-        <div class="about-text reveal"><p class="lead">I'm <strong>Mausam Singh</strong> — most people know me as <strong>Seezu</strong>.</p><p>I'm drawn to things that make me think, stories that stay with me, and ideas that challenge the obvious. This space is a snapshot of what I like, what I'm learning, and what I'm creating along the way.</p><p>No manufactured success story. Just curiosity, intention, and a little bit of attitude.</p><div class="signature">Mausam <span>✳</span></div></div>
+        <div><p class="display-small reveal">A LITTLE<br>ABOUT <em>ME.</em></p><figure class="portrait"><img src="photos/seezu.jpg" width="900" height="935" alt="Black and white portrait of Mausam Singh" loading="lazy"><div class="about-stamp">MS<br><span>SEEZU</span></div></figure></div>
+        <div class="about-text reveal"><p class="lead">I'm <strong>Mausam Singh</strong> — most people know me as <strong>Seezu</strong>.</p><p>I'm drawn to things that make me think, stories that stay with me, and ideas that challenge the obvious. This space is a snapshot of what I like, what I'm learning, and what I'm creating along the way.</p><p>No manufactured success story. Just curiosity, intention, and a little bit of attitude.</p><div class="intro" data-intro></div><div class="signature">Mausam <span>✳</span></div></div>
+      </div>
+    </section>
+
+    <section class="connect section-wrap section-pad" id="connect">
+      <div class="section-heading"><span class="eyebrow">02 — CONNECT</span><span class="section-rule"></span></div>
+      <div class="projects-top"><h2 class="display-medium reveal">ALL THE LINKS,<br>THE <em>CIRCLE.</em></h2><p class="muted reveal">Every link in one place, and a friend circle you can ask to join.</p></div>
+      <div class="interest-grid connect-grid">
+        <a class="interest-card reveal" href="links.html"><span class="card-no">01</span><div class="interest-icon">◈</div><h3>Links</h3><p>Everything I share, in one place.</p><span class="card-arrow">↗</span></a>
+        <a class="interest-card reveal" href="friends.html"><span class="card-no">02</span><div class="interest-icon">∞</div><h3>Friend circle</h3><p>The people around me. Ask to join.</p><span class="card-arrow">↗</span></a>
       </div>
     </section>
 
     <section class="interests section-wrap section-pad" id="interests">
-      <div class="section-heading"><span class="eyebrow">02 — WHAT MOVES ME</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">03 — WHAT MOVES ME</span><span class="section-rule"></span></div>
       <div class="section-intro"><h2 class="display-medium reveal">CURIOSITY<br>IS THE <em>COMPASS.</em></h2><p class="muted reveal">A few things that keep my mind switched on.</p></div>
       <div class="interest-grid">
         <a class="interest-card reveal" href="gaming.html"><span class="card-no">01</span><div class="interest-icon">◉</div><h3>Gaming</h3><p>Worlds to explore, strategies to master, and stories to get lost in.</p><span class="card-arrow">↗</span></a>
@@ -78,22 +89,22 @@
     </section>
 
     <section class="skills section-wrap section-pad" id="skills">
-      <div class="section-heading"><span class="eyebrow">03 — THE TOOLKIT</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">04 — THE TOOLKIT</span><span class="section-rule"></span></div>
       <div class="skills-grid"><h2 class="display-medium reveal">ALWAYS<br><em>LEARNING.</em></h2><div class="skills-content reveal"><p class="lead">Skills aren't a finished list. They're a work in progress.</p><p class="muted">This portfolio is a starting point, not a claim of expertise. The focus is on curiosity, digital fluency, creative thinking, and learning by doing.</p><div class="skill-list"><div><span>Creative thinking</span><span class="skill-track"><i style="--level:82%"></i></span></div><div><span>Digital exploration</span><span class="skill-track"><i style="--level:78%"></i></span></div><div><span>Problem solving</span><span class="skill-track"><i style="--level:74%"></i></span></div><div><span>Learning & adapting</span><span class="skill-track"><i style="--level:90%"></i></span></div></div><span class="skill-note">PERSONAL SELF-ASSESSMENT · NOT CERTIFICATIONS</span></div></div>
     </section>
 
     <section class="projects section-wrap section-pad" id="projects">
-      <div class="section-heading"><span class="eyebrow">04 — SELECTED WORK</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">05 — SELECTED WORK</span><span class="section-rule"></span></div>
       <div class="projects-top"><h2 class="display-medium reveal">IDEAS INTO<br><em>REALITY.</em></h2><p class="muted reveal">The workbench is open. This collection will grow as new experiments take shape.</p></div>
       <div class="project-list">
         <article class="project-row reveal"><span class="project-number">01</span><div><h3>SEEZU® — Personal Identity</h3><p>A digital home for the person behind the name.</p></div><span class="project-status">THIS WEBSITE</span><span class="project-arrow">↗</span></article>
         <article class="project-row reveal"><span class="project-number">02</span><div><h3>Next experiment</h3><p>A space for the next idea worth building.</p></div><span class="project-status">IN THE MAKING</span><span class="project-arrow">↗</span></article>
         <article class="project-row reveal"><span class="project-number">03</span><div><h3>Future collaborations</h3><p>Good ideas are better when they're shared.</p></div><span class="project-status">OPEN TO IDEAS</span><span class="project-arrow">↗</span></article>
       </div>
-    </section>
+    <a class="back more" href="projects.html">ALL PROJECTS →</a></section>
 
     <section class="gallery section-wrap section-pad" id="gallery">
-      <div class="section-heading"><span class="eyebrow">05 — THE ARCHIVE</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">06 — THE ARCHIVE</span><span class="section-rule"></span></div>
       <div class="gallery-head"><h2 class="display-medium reveal">FRAMES<br>OF <em>LIFE.</em></h2><p class="muted reveal">A gallery waiting for its stories. Add your favourite photos and moments here.</p></div>
       <div class="gallery-grid">
         <div class="gallery-tile tile-large"><span>01 / MOMENTS</span><div class="tile-art art-one"><b>THE<br>NOW.</b></div><small>GOOD THINGS TAKE TIME</small></div>
@@ -104,19 +115,20 @@
     </section>
 
     <section class="notes section-wrap section-pad" id="notes">
-      <div class="section-heading"><span class="eyebrow">06 — NOTES</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">07 — NOTES</span><span class="section-rule"></span></div>
       <div class="projects-top"><h2 class="display-medium reveal">THINGS WORTH<br><em>REMEMBERING.</em></h2><p class="muted reveal">Thoughts, ideas and small lessons. New notes land here.</p></div>
       <div class="project-list">
         <a class="project-row reveal" href="note-why-i-built-this-site.html"><span class="project-number">N1</span><div><h3>Why I built this site</h3><p>The idea behind SEEZU.</p></div><span class="project-status">NOV 2026</span><span class="project-arrow">↗</span></a>
         <a class="project-row reveal" href="note-games-that-changed-how-i-think.html"><span class="project-number">N2</span><div><h3>Games that changed how I think</h3><p>Coming soon.</p></div><span class="project-status">COMING SOON</span><span class="project-arrow">↗</span></a>
         <a class="project-row reveal" href="note-what-im-learning-this-month.html"><span class="project-number">N3</span><div><h3>What I'm learning this month</h3><p>Coming soon.</p></div><span class="project-status">COMING SOON</span><span class="project-arrow">↗</span></a>
       </div>
-    </section>
+    <a class="back more" href="blog.html">ALL NOTES →</a></section>
+
 
     <section class="contact section-wrap section-pad" id="contact">
-      <div class="section-heading"><span class="eyebrow">07 — SAY HELLO</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">08 — SAY HELLO</span><span class="section-rule"></span></div>
       <div class="contact-main"><p class="eyebrow reveal">HAVE A GOOD IDEA?</p><h2 class="contact-title reveal">LET'S<br><em>CONNECT.</em></h2><a class="contact-email reveal" href="mailto:hello@seezu.me">Start a conversation <span>↗</span></a></div>
-      <div class="contact-bottom"><p>Good conversations start somewhere.<br>This could be the somewhere.</p><div class="social-links"><a href="https://github.com/seezuofficial" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X / TWITTER ↗</a></div></div>
+      <div class="contact-bottom"><p>Good conversations start somewhere.<br>This could be the somewhere.</p><div class="social-links"><a href="https://github.com/seezuofficial" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.instagram.com/shady.seezu?cnvx=MWoyZ3I0cGNxNHc1dw==" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X / TWITTER ↗</a></div></div>
     </section>
   </main>
 
