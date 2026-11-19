@@ -12,8 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>">
+  <meta property="og:image" content="og.jpg">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="upgrade.css">
   <script defer src="script.js"></script>
+  <script defer src="upgrade.js"></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -21,7 +25,7 @@
     <a class="brand" href="#home" aria-label="SEEZU home">SEEZU<span>®</span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#interests">Interests</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a>
+      <a href="#about">About</a><a href="#interests">Interests</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#notes">Notes</a>
       <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
@@ -40,9 +44,18 @@
       <div class="hero-visual" aria-hidden="true">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="orb-core"><span>S</span></div><div class="orb-label label-top">STAY CURIOUS</div><div class="orb-label label-bottom">MOVE DIFFERENT</div>
-        <span class="hero-index">01 / 07</span>
+        <span class="hero-index">01 / 08</span>
       </div>
       <div class="hero-footer"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span class="mono">A LIFE IN PROGRESS ↘</span></div>
+    </section>
+
+    <section class="now section-wrap" aria-label="Now">
+      <div class="now-grid">
+        <div><span class="mono">PLAYING</span><b>Add your current game</b></div>
+        <div><span class="mono">WATCHING</span><b>Add your current series</b></div>
+        <div><span class="mono">LEARNING</span><b>Front-end web design</b></div>
+        <div><span class="mono">BUILDING</span><b>This website</b></div>
+      </div>
     </section>
 
     <section class="about section-wrap section-pad" id="about">
@@ -57,10 +70,10 @@
       <div class="section-heading"><span class="eyebrow">02 — WHAT MOVES ME</span><span class="section-rule"></span></div>
       <div class="section-intro"><h2 class="display-medium reveal">CURIOSITY<br>IS THE <em>COMPASS.</em></h2><p class="muted reveal">A few things that keep my mind switched on.</p></div>
       <div class="interest-grid">
-        <article class="interest-card reveal"><span class="card-no">01</span><div class="interest-icon">◉</div><h3>Gaming</h3><p>Worlds to explore, strategies to master, and stories to get lost in.</p><span class="card-arrow">↗</span></article>
-        <article class="interest-card reveal"><span class="card-no">02</span><div class="interest-icon">⌘</div><h3>Technology</h3><p>New tools, clever systems, and the future taking shape.</p><span class="card-arrow">↗</span></article>
-        <article class="interest-card reveal"><span class="card-no">03</span><div class="interest-icon">✳</div><h3>Films & Series</h3><p>Big ideas, layered characters, and stories with a darker edge.</p><span class="card-arrow">↗</span></article>
-        <article class="interest-card reveal"><span class="card-no">04</span><div class="interest-icon">◎</div><h3>Discovery</h3><p>Finding new places, perspectives, music, and rabbit holes.</p><span class="card-arrow">↗</span></article>
+        <a class="interest-card reveal" href="gaming.html"><span class="card-no">01</span><div class="interest-icon">◉</div><h3>Gaming</h3><p>Worlds to explore, strategies to master, and stories to get lost in.</p><span class="card-arrow">↗</span></a>
+        <a class="interest-card reveal" href="technology.html"><span class="card-no">02</span><div class="interest-icon">⌘</div><h3>Technology</h3><p>New tools, clever systems, and the future taking shape.</p><span class="card-arrow">↗</span></a>
+        <a class="interest-card reveal" href="films-series.html"><span class="card-no">03</span><div class="interest-icon">✳</div><h3>Films & Series</h3><p>Big ideas, layered characters, and stories with a darker edge.</p><span class="card-arrow">↗</span></a>
+        <a class="interest-card reveal" href="discovery.html"><span class="card-no">04</span><div class="interest-icon">◎</div><h3>Discovery</h3><p>Finding new places, perspectives, music, and rabbit holes.</p><span class="card-arrow">↗</span></a>
       </div>
     </section>
 
@@ -90,11 +103,20 @@
       <p class="gallery-note">PHOTO PLACEHOLDERS · PERSONAL IMAGES CAN BE ADDED WHEN READY</p>
     </section>
 
+    <section class="notes section-wrap section-pad" id="notes">
+      <div class="section-heading"><span class="eyebrow">06 — NOTES</span><span class="section-rule"></span></div>
+      <div class="projects-top"><h2 class="display-medium reveal">THINGS WORTH<br><em>REMEMBERING.</em></h2><p class="muted reveal">Thoughts, ideas and small lessons. New notes land here.</p></div>
+      <div class="project-list">
+        <a class="project-row reveal" href="note-why-i-built-this-site.html"><span class="project-number">N1</span><div><h3>Why I built this site</h3><p>The idea behind SEEZU.</p></div><span class="project-status">NOV 2026</span><span class="project-arrow">↗</span></a>
+        <a class="project-row reveal" href="note-games-that-changed-how-i-think.html"><span class="project-number">N2</span><div><h3>Games that changed how I think</h3><p>Coming soon.</p></div><span class="project-status">COMING SOON</span><span class="project-arrow">↗</span></a>
+        <a class="project-row reveal" href="note-what-im-learning-this-month.html"><span class="project-number">N3</span><div><h3>What I'm learning this month</h3><p>Coming soon.</p></div><span class="project-status">COMING SOON</span><span class="project-arrow">↗</span></a>
+      </div>
+    </section>
+
     <section class="contact section-wrap section-pad" id="contact">
-      <div class="section-heading"><span class="eyebrow">06 — SAY HELLO</span><span class="section-rule"></span></div>
+      <div class="section-heading"><span class="eyebrow">07 — SAY HELLO</span><span class="section-rule"></span></div>
       <div class="contact-main"><p class="eyebrow reveal">HAVE A GOOD IDEA?</p><h2 class="contact-title reveal">LET'S<br><em>CONNECT.</em></h2><a class="contact-email reveal" href="mailto:hello@seezu.me">Start a conversation <span>↗</span></a></div>
       <div class="contact-bottom"><p>Good conversations start somewhere.<br>This could be the somewhere.</p><div class="social-links"><a href="https://github.com/seezuofficial" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://x.com/" target="_blank" rel="noopener noreferrer">X / TWITTER ↗</a></div></div>
-      <p class="contact-note">Replace the sample social destinations and email address with your active contact details before launch.</p>
     </section>
   </main>
 
